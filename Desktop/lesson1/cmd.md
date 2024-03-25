@@ -5,7 +5,7 @@ komanda smeny direktorii
 cd c:/folder_name
 ```
 
-Komanda otobrajeniia tekushe direktorii MacOs, Linux
+Komanda otobrajeniia tekushei direktorii MacOs, Linux
 ```sh
 pwd
 ```
@@ -14,4 +14,9 @@ listing tekushei direktorii
 Windowss:
 ```sh
 dir
+```
+
+udalenie faila
+```sh
+del <filename>
 ```
