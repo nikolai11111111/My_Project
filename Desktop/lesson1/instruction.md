@@ -27,3 +27,6 @@ Novaia stroka nachinaetsia s otstupa v odnu stroku
 
 2 list
 
+## WEB ssylki
+
+Text [primer ssylki](http.example.com "vsplyvaiushaiia podskazka") 
