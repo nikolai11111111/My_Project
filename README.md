@@ -1,3 +1,4 @@
+Task 1
 // Zadaite znacheniya M i N. Napishite programmu, kotoraia
 // vyvedet vse naturalinye chisla v promejutke ot M do N.
 // Ispolizovati rekursiyu, ne ispolizovati tsikly.
@@ -34,5 +35,41 @@ void PrintNumbers(int M, int N)
     else
     {
         PrintNumbers(M - 1, N);
+    }
+}
+
+
+Task 2
+// Napishite programmu vychesleniya funktsii Akkermana s pomoshiyu rekursii. 
+// Dany dva otritsatelinyh chisla m i n.
+// Primer: m = 2, n = 3 => A(m,n) = 29
+//        m = 11, n = 3 => A(m,n) = 16381
+
+void Main(string[] args)
+{
+    int m1 = 2;
+    int n1 = 3;
+    int result1 = Ack(m1, n1);
+    Console.WriteLine($"A({m1}, {n1}) = {result1}");
+
+    int m2 = 11;
+    int n2 = 3;
+    int result2 = Ack(m2, n2);
+    Console.WriteLine($"A({m2}, {n2}) = {result2}");
+}
+
+int Ack(int m, int n)
+{
+    if (m == 0)
+    {
+        return n + 1;
+    }
+    else if (n == 0)
+    {
+        return Ack(m - 1, 1);
+    }
+    else
+    {
+        return Ack(m - 1, Ack(m, n - 1));
     }
 }
