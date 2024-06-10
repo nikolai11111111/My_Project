@@ -39,25 +39,23 @@ void PrintNumbers(int M, int N)
 }
 
 
+
 Task 2
 // Napishite programmu vychesleniya funktsii Akkermana s pomoshiyu rekursii. 
 // Dany dva otritsatelinyh chisla m i n.
 // Primer: m = 2, n = 3 => A(m,n) = 29
 //        m = 11, n = 3 => A(m,n) = 16381
 
-void Main(string[] args)
-{
-    int m1 = 2;
-    int n1 = 3;
-    int result1 = Ack(m1, n1);
-    Console.WriteLine($"A({m1}, {n1}) = {result1}");
+int m1 = 3;
+int n1 = 2;
+int result1 = Ack(m1, n1);
+Console.WriteLine($"A({m1}, {n1}) = {result1}");
 
-    int m2 = 11;
-    int n2 = 3;
-    int result2 = Ack(m2, n2);
-    Console.WriteLine($"A({m2}, {n2}) = {result2}");
-}
-
+int m2 = 3;
+int n2 = 11;
+int result2 = Ack(m2, n2);
+Console.WriteLine($"A({m2}, {n2}) = {result2}");
+    
 int Ack(int m, int n)
 {
     if (m == 0)
@@ -75,13 +73,14 @@ int Ack(int m, int n)
 }
 
 
+
 Task 3
 // Zadaite proizvolinyi massiv. Vyvedite ego elementy, nachinaya s kontsa. 
 // Ispolizovati rekursiyu, ne ispolizovati tsikly.
 // Primer: [1, 2, 5, 0, 10, 34] => 34, 10, 0, 5, 2, 1
 
-    int[] numbers = { 1, 2, 5, 0, 10, 34 }; 
-    PrintArrayReverse(numbers, 0);
+int[] numbers = { 1, 2, 5, 0, 10, 34 }; 
+PrintArrayReverse(numbers, 0);
 
 void PrintArrayReverse(int[] arr, int index)
 {
