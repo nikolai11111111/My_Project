@@ -73,3 +73,23 @@ int Ack(int m, int n)
         return Ack(m - 1, Ack(m, n - 1));
     }
 }
+
+
+Task 3
+// Zadaite proizvolinyi massiv. Vyvedite ego elementy, nachinaya s kontsa. 
+// Ispolizovati rekursiyu, ne ispolizovati tsikly.
+// Primer: [1, 2, 5, 0, 10, 34] => 34, 10, 0, 5, 2, 1
+
+    int[] numbers = { 1, 2, 5, 0, 10, 34 }; 
+    PrintArrayReverse(numbers, 0);
+
+void PrintArrayReverse(int[] arr, int index)
+{
+    if (index >= arr.Length)
+    {
+        return;
+    }
+
+    PrintArrayReverse(arr, index + 1);
+    Console.Write(arr[index] + " ");
+}
